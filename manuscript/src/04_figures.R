@@ -300,7 +300,7 @@ if (overwrite_figures == TRUE) {
            height = 160,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_1.png"),
+    ggsave(here("manuscript/output/figures/fig_1.jpg"),
            fig_1,
            dpi = 300,
            width = 180,
@@ -415,7 +415,7 @@ if (overwrite_figures == TRUE) {
            height = 140,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_2.png"),
+    ggsave(here("manuscript/output/figures/fig_2.jpg"),
            fig_2,
            dpi = 300,
            width = 180,
@@ -497,7 +497,7 @@ if (overwrite_figures == TRUE) {
            height = 140,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_3.png"),
+    ggsave(here("manuscript/output/figures/fig_3.jpg"),
            fig_3,
            dpi = 300,
            width = 180,
@@ -592,7 +592,7 @@ if (overwrite_figures == TRUE) {
            height = 140,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_4.png"),
+    ggsave(here("manuscript/output/figures/fig_4.jpg"),
            fig_4,
            dpi = 300,
            width = 180,
@@ -685,7 +685,7 @@ if (overwrite_figures == TRUE) {
            height = 140,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_s1.png"),
+    ggsave(here("manuscript/output/figures/fig_s1.jpg"),
            fig_s1,
            dpi = 300,
            width = 180,
@@ -777,7 +777,7 @@ if (overwrite_figures == TRUE) {
            height = 140,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_s2.png"),
+    ggsave(here("manuscript/output/figures/fig_s2.jpg"),
            fig_s2,
            dpi = 300,
            width = 180,
@@ -900,7 +900,7 @@ if (overwrite_figures == TRUE) {
            height = 180,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_5.png"),
+    ggsave(here("manuscript/output/figures/fig_5.jpg"),
            fig_5,
            dpi = 300,
            width = 180,
@@ -1024,7 +1024,7 @@ if (overwrite_figures == TRUE) {
            height = 180,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_6.png"),
+    ggsave(here("manuscript/output/figures/fig_6.jpg"),
            fig_6,
            dpi = 300,
            width = 180,
@@ -1147,7 +1147,7 @@ if (overwrite_figures == TRUE) {
            height = 180,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_7.png"),
+    ggsave(here("manuscript/output/figures/fig_7.jpg"),
            fig_7,
            dpi = 300,
            width = 180,
@@ -1270,7 +1270,7 @@ if (overwrite_figures == TRUE) {
            height = 180,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_s3.png"),
+    ggsave(here("manuscript/output/figures/fig_s3.jpg"),
            fig_s3,
            dpi = 300,
            width = 180,
@@ -1393,7 +1393,7 @@ if (overwrite_figures == TRUE) {
            height = 180,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_s4.png"),
+    ggsave(here("manuscript/output/figures/fig_s4.jpg"),
            fig_s4,
            dpi = 300,
            width = 180,
@@ -1524,7 +1524,7 @@ if (overwrite_figures == TRUE) {
            height = 180,
            units = "mm")
     
-    ggsave(here("manuscript/output/figures/fig_8.png"),
+    ggsave(here("manuscript/output/figures/fig_8.jpg"),
            fig_8,
            dpi = 300,
            width = 180,
