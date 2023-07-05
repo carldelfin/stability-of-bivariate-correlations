@@ -1,0 +1,65 @@
+BootStrap: debootstrap
+OSVersion: stable 
+MirrorURL: http://deb.debian.org/debian
+
+# ----------------------------------------------------------------------------------------
+%files
+# ----------------------------------------------------------------------------------------
+
+    # copy source files from host
+    $PWD/src/ /src
+    $PWD/data_01/ /data_01
+    $PWD/data_02/ /data_02
+    $PWD/data_03/ /data_03
+    $PWD/data_04/ /data_04
+    $PWD/models/ /models
+    
+# ----------------------------------------------------------------------------------------
+%environment
+# ----------------------------------------------------------------------------------------
+
+    export LC_ALL=C
+
+# ----------------------------------------------------------------------------------------
+%post
+# ----------------------------------------------------------------------------------------
+
+    # make sure system is up to date
+    apt update && apt upgrade -y
+    
+    # install required packages
+    apt install -y git make g++ curl parallel libtbb-dev \
+        libopenblas-serial-dev libopenblas0-serial liblapacke-dev libarmadillo-dev
+
+    # install cmdstan 
+    git clone https://github.com/stan-dev/cmdstan.git --recursive
+    mv /src/local /cmdstan/make/
+    cd cmdstan
+    make -j 12 build
+    cd
+
+    # move models and data into place 
+    mv /models /cmdstan/
+
+    cp -r /data_01 /src/
+    cp -r /data_02 /src/
+    cp -r /data_03 /src/
+    cp -r /data_04 /src/
+
+    mv /data_01 /cmdstan/
+    mv /data_02 /cmdstan/
+    mv /data_03 /cmdstan/
+    mv /data_04 /cmdstan/
+
+# ----------------------------------------------------------------------------------------
+%runscript
+# ----------------------------------------------------------------------------------------
+
+    echo "Starting simulation with the following arguments: $*"
+    /src/run_sim.sh "${@}"
+
+# ----------------------------------------------------------------------------------------
+%labels
+# ----------------------------------------------------------------------------------------
+
+    Author Carl Delfin, 2022-2023

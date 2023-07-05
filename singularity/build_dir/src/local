@@ -1,0 +1,2 @@
+CXXFLAGS += -march=native -mtune=native -DEIGEN_USE_BLAS -DEIGEN_USE_LAPACKE
+LDLIBS += -lblas -llapack -llapacke

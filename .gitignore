@@ -1,0 +1,15 @@
+.here
+manuscript.docx
+supplemental_material.docx
+manuscript.Rmd
+supplemental_material.Rmd
+/manuscript/apa-7th-edition.csl
+/manuscript/bibliography.bib
+/manuscript/frontiers-in-psychology.csl
+/manuscript/template.sty
+/manuscript/template.docx
+/manuscript/tmp/
+/manuscript/output/figures/
+/manuscript/output/tables/
+/manuscript/formatted_for_submission/
+/singularity/raw_output/
