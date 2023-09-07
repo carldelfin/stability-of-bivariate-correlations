@@ -1,6 +1,6 @@
-# Improving the stability of bivariate correlations using informative Bayesian priors: A Monte Carlo simulation study
+# Improving the stability of bivariate correlations using informative Bayesian priors: a Monte Carlo simulation study
 
-This repository contains all code used for the study [Improving the stability of bivariate correlations using informative Bayesian priors: A Monte Carlo simulation study](https://google.com).
+This repository contains all code used for the study [Improving the stability of bivariate correlations using informative Bayesian priors: a Monte Carlo simulation study](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1253452/full).
 
 Roughly in the order they are used, you can find:
 
